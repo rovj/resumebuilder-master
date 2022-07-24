@@ -42,7 +42,7 @@ function Education() {
     let tempArr = {}
     inputList.forEach((input) => {
       if (input.name === fieldCd.GraduationCGPA) {
-        if (input.value.match(/^[0-9]\.\d\d$/)) {
+        if (!input.value.match(/^[0-9]\.\d\d$/)) {
           temp = 1
           tempArr[input.name] = 'Please enter a valid CGPA!'
         }

@@ -65,38 +65,38 @@ function ResumePreview(props) {
         </div>
       </div>
 
-      <div className={'profSummSection'}>
+      {rvContact(fieldCd.ProfSummary) &&  <div className={'profSummSection'}>
         <p className="heading bold text-upper">PROFESSIONAL SUMMARY</p>
         <div className={'divider'}></div>
         <p className="ProfSummary">{rvContact(fieldCd.ProfSummary)}</p>
-      </div>
+      </div> }
 
       <div className="professional-section">
-        <div className={'profSummSection'}>
+        {rvProfessional(fieldCd.Skills) && <div className={'profSummSection'}>
           <p className="heading bold">SKILLS</p>
           <div className={'divider'}></div>
           <div className="split">{rvProfessional(fieldCd.Skills)}</div>
-        </div>
+        </div>}
 
-        <div className={'profSummSection'}>
+        {rvProfessional(fieldCd.Experience) && <div className={'profSummSection'}>
           <p className="heading bold">EXPERIENCE</p>
           <div className={'divider'}></div>
           <div className="split">{rvProfessional(fieldCd.Experience)}</div>
-        </div>
+        </div>}
 
-        <div className={'profSummSection'}>
+        {rvProfessional(fieldCd.Certifications) && <div className={'profSummSection'}>
           <p className="heading bold">CERTIFICATIONS</p>
           <div className={'divider'}></div>
           <div className="split">{rvProfessional(fieldCd.Certifications)}</div>
-        </div>
+        </div>}
 
-        <div className={'profSummSection'}>
+        {rvProfessional(fieldCd.Achievements) && <div className={'profSummSection'}>
           <p className="heading bold">ACHIEVEMENTS</p>
           <div className={'divider'}></div>
           <div className="split">{rvProfessional(fieldCd.Achievements)}</div>
-        </div>
+        </div>}
       </div>
-      <div className={'educationSection text-upper'}>
+      {(rvEducation(fieldCd.SchoolName) || rvEducation(fieldCd.Degree) || rvEducation(fieldCd.GraduationCGPA) || rvEducation(fieldCd.GraduationDate) || rvEducation(fieldCd.GraduationYear) || rvEducation(fieldCd.City) || rvEducation(fieldCd.JuniorCollege) || rvEducation(fieldCd.HscPercentage) || rvEducation(fieldCd.HscMonth) || rvEducation(fieldCd.HscYear) || rvEducation(fieldCd.HighSchool) || rvEducation(fieldCd.SscPercentage) || rvEducation(fieldCd.SscMonth) || rvEducation(fieldCd.SscYear)) && <div className={'educationSection text-upper'}>
         <div className={'profSummSection'}>
           <div className="split-section">
             <p className="heading bold">EDUCATIONAL DETAILS</p>
@@ -175,7 +175,7 @@ function ResumePreview(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div>}
     </div>
   )
 }

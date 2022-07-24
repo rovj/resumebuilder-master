@@ -33,22 +33,7 @@ function Finalize() {
         snackRef.current.className = "";
       },3000);
   }
-  // const downloadResume = () => {
-  //   const input = document.getElementById('resumePreview')
-  //   html2canvas(input)
-  //     .then((canvas) => {
-  //       const imgData = canvas.toDataURL('image/png')
-  //       const pdf = new jsPDF('p', 'mm', 'a4')
-  //       var width = pdf.internal.pageSize.getWidth()
-  //       var height = pdf.internal.pageSize.getHeight()
-  //       pdf.addImage(imgData, 'JPEG', 0, 0, width, height)
-  //       // pdf.output('dataurlnewwindow');
-  //       pdf.save('resume.pdf')
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error)
-  //     })
-  // }
+
 
   const componentRef = useRef()
 
@@ -85,9 +70,9 @@ function Finalize() {
             />
           </div>
           <div className=" download-resume resume-options">
-            <p className="no-margin">Save to Database</p>
+            <p className="no-margin">Save your resume</p>
             <a style={{ cursor: 'pointer' }} onClick={saveToDatabase}>
-              Save to Database
+              Save your resume
             </a>
           </div>
         </div>
