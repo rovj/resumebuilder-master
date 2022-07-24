@@ -1,0 +1,240 @@
+.contact-name {
+	margin-top: 40px;
+}
+
+.split {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.4rem;
+
+	line-height: 1.4;
+	.split-item {
+		width: 33%;
+		min-width: 200px;
+	}
+}
+
+.skin1 {
+	font-size: 1rem;
+
+	padding: 3%;
+	p {
+		margin: 0;
+	}
+
+	.email,
+	.phone,
+	.profession,
+	.address {
+		font-size: 10px;
+	}
+
+	p.heading {
+		padding: 10px 0 0;
+		font-size: 1.6rem;
+		width: 100%;
+		text-align: center;
+		fill: #6ca8b9;
+		font-weight: bold;
+	}
+	.ProfSummary {
+		line-height: 1.4;
+		font-size: 1.4rem;
+	}
+
+	.contact-name {
+		color: cornflowerblue;
+
+		font-size: 3rem;
+		font-weight: bold;
+		padding: 5px 0px;
+	}
+	.address {
+		padding: 5px 0px;
+	}
+	.educationSection {
+		.educationDetailsContainer {
+			display: flex;
+			flex-wrap: wrap;
+			p {
+				padding: 0 1rem;
+				font-size: 1.2rem;
+			}
+			padding: 1rem;
+		}
+	}
+}
+
+.skin2,
+.skin3,
+.skin4 {
+	.divider {
+		display: none;
+	}
+	font-size: 1rem;
+
+	padding: 3%;
+	p {
+		margin: 0;
+	}
+
+	.name-section {
+		display: flex;
+		.contact-name-section {
+			.contact-name {
+				line-height: 1;
+				text-align: justify;
+			}
+		}
+		.contact-details-section {
+			.email,
+			.phone,
+			.profession,
+			.address {
+				font-size: 10px;
+				text-align: left;
+				padding: 0;
+			}
+		}
+	}
+
+	p.heading {
+		margin-top: 1rem;
+		padding: 0.25rem 0.5rem;
+		font-size: 1.6rem;
+		width: 100%;
+		text-align: left;
+		background-color: #f6f6f6;
+		display: flex;
+		align-items: center;
+		color: black;
+		font-weight: 800;
+	}
+	.ProfSummary {
+		line-height: 1.4;
+		font-size: 1.4rem;
+	}
+
+	.contact-name {
+		color: black;
+		font-family: 'Arial';
+		text-transform: uppercase;
+
+		font-size: 3rem;
+		font-weight: bold;
+		padding: 5px 0px;
+	}
+	.address {
+		padding: 5px 0px;
+	}
+	.educationSection {
+		.educationDetailsContainer {
+			display: flex;
+			flex-wrap: wrap;
+			p {
+				font-size: 1.2rem;
+				padding: 0 1rem;
+			}
+		}
+	}
+}
+
+.skin3,
+.skin4 {
+	.name-section {
+		display: block;
+	}
+}
+
+.skin3 {
+	.divider {
+		display: none;
+	}
+	p.heading {
+		margin-top: 0;
+		font-size: 1.6rem;
+		width: 100%;
+		text-align: left;
+		color: #6094ce;
+		background-color: transparent;
+		display: flex;
+		align-items: flex-start;
+		font-weight: 800;
+	}
+	.professional-section {
+		width: 100%;
+	}
+	.profSummSection {
+		display: flex;
+		width: 100%;
+
+		p,
+		.split,
+		.split-section {
+			width: 47%;
+			padding: 1rem 0 1rem 2.5%;
+			&:first-child {
+				padding: 1rem 0;
+			}
+		}
+
+		.split-section-right {
+			.educationDetailsContainer {
+				display: block;
+				p {
+					padding: 0;
+				}
+			}
+			.divider {
+				display: block;
+			}
+		}
+	}
+	.ProfSummary {
+		line-height: 1.2;
+		font-size: 1.4rem;
+	}
+}
+
+.divider {
+	width: 100%;
+	border-bottom: 1px solid darkcyan;
+	display: flex;
+	margin: 1rem 0;
+}
+
+
+.skin2{
+	.name-section{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.educationDetailsContainer{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.split{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.ProfSummary{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.skin4{
+	.educationDetailsContainer{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.split{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.ProfSummary{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
